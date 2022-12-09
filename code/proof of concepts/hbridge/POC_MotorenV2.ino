@@ -11,27 +11,27 @@ void loop() {
   // put your main code here, to run repeatedly:
 digitalWrite(2,1);
 
-digitalWrite(5,1);
+analogWrite(5,25);
 digitalWrite(6,0);
-digitalWrite(9,1);
+digitalWrite(9,0);
 digitalWrite(10,0);
 delay(5000);
 
 digitalWrite(5,0);
-digitalWrite(6,1);
-digitalWrite(9,0);
-digitalWrite(10,1);
-delay(5000);
-
-analogWrite(5,128);
-analogWrite(6,0);
-analogWrite(9,128);
+digitalWrite(6,0);
+digitalWrite(9,25);
 analogWrite(10,0);
 delay(5000);
 
 analogWrite(5,0);
-analogWrite(6,128);
+analogWrite(6,250);
 analogWrite(9,0);
-analogWrite(10,128);
+analogWrite(10,0);
+delay(5000);
+
+analogWrite(5,0);
+analogWrite(6,0);
+analogWrite(9,0);
+analogWrite(10,250);
 delay(5000);
 }
